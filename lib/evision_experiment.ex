@@ -19,12 +19,8 @@ defmodule EvisionExperiment do
   def hello do
     File.rm(@tmp_image_path)
 
-    lenna_test_image_path = "test.png"
-
-    list = 1..1000//5 |> Enum.to_list()
-
-    Evision.imread(lenna_test_image_path)
-    |> lines(list)
+    Evision.imread("test.png")
+    |> lines(1..1000//5 |> Enum.to_list)
     |> display_image()
 
     :world
