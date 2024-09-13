@@ -4,7 +4,6 @@ defmodule EvisionExperiment do
   """
   require Logger
   alias Evision
-  alias Nx
   @tmp_image_path "/dev/shm/cv.png"
 
   @doc """
